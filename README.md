@@ -52,15 +52,18 @@ please contact: Mette DalGaard Agersted (mette.dalgaard.agersted@hi.no) & Yi Liu
 
 #### 2.4 Elbow algorithm suggest optimal cluster numbers [4, 8]
 More specifically,
-- raging cluster number from 4-8, similar results are obtained with more detailed targets spotted
-- one anomaly target/cluster spotted with most samples locate at the same point
+- ranging cluster number from 4-8, similar results are obtained with more detailed targets spotted
+- one anomaly target/cluster spotted with most samples locate at the same point, which are ruled out by discarding the top and least portions of values of the data
+- Elbow algorithm only suggests statistically the number of clusters, so more than 8 clusters can be considered, such as 9-12 
 
 ### 3. Experiment output
-For each group above in **2**, **cluster numbers** are suggested to be **[4, 10]** by the Elbow method.  
-
 Among the considered clustering algorithms, we observed that AC algorithm performs the best with both the test and site dataset, which are consistent. Based on these results, we obtain the reflectances of frequency of the clusters. 
 
-### 4. Dataset Info.
+### 4. To do
+Cluster the whole data set and assign a lable to each sample. The labels should be consistent between multiple runs of clustering. 
+In addition, the reflectances of the clusters will also be analyzed, biologically. And their distribution and characteristics along the depth will also be inspected and discussed.
+
+### Appendix. Dataset Info.
 Here's two differnt data files containing information on target strength at different frequencies for single targets.
 
 - Each row is one target. All the columns names something like "F_.." are different frequencies and the corresponding values at a given frequency is the target strength for a given target at that given frequency.
