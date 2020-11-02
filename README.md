@@ -56,9 +56,9 @@ More specifically,
 - one anomaly target/cluster spotted with most samples locate at the same point
 
 ### 3. Experiment output
-For each group above in **2**, **cluster numbers** are set to **[4,5,6,7,8]** so to be thorough. Along the frequency reflectance, **standard deviation** will also be plotted around o see variations. 
+For each group above in **2**, **cluster numbers** are suggested to be **[4, 10]** by the Elbow method.  
 
-We confirmed that AC algorithm performs the best with the test and site dataset. Informative frequency reflectances have been obtained. 
+Among the considered clustering algorithms, we observed that AC algorithm performs the best with both the test and site dataset, which are consistent. Based on these results, we obtain the reflectances of frequency of the clusters. 
 
 ### 4. Dataset Info.
 Here's two differnt data files containing information on target strength at different frequencies for single targets.
